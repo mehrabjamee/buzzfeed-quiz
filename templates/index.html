@@ -3,11 +3,34 @@
         <title>Welcome!</title>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+        <h1>Which Avatar nation are you?</h1>
+        <p>Answer a few questions, you may be surprised by the results!</p>
+        <form method="post" action="/results">
+            <p>Are you a free spirit or do you prefer to face your problems head-on</p>
+            
+            <label for="free_spirit"> 
+                <input type="radio" name="q1" value="free_spirit"/>
+                free spirit
+            </label><br>
+
+            <label for="head_on"> 
+                <input type="radio" name="q1" value="head_on"/>
+                head on
+            </label><br>
+
+            <p>Which character do you prefer?</p>
+            
+            <label for="sokka"> 
+                <input type="radio" name="q2" value="sokka"/>
+                Sokka
+            </label><br>
+
+            <label for="toph"> 
+                <input type="radio" name="q2" value="toph"/>
+                Toph
+            </label><br>
+
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
